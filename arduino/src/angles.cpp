@@ -2,18 +2,16 @@
 #include "arduino/Angles.h"
 
 
-
-
 int main(int argc, char **argv)
 {
   
-  ros::init(argc, argv, "angles_sen");
+  ros::init(argc, argv, "angles_sen");  
 
   
   ros::NodeHandle n;
 
   
-  ros::Publisher angles_pub = n.advertise<arduino::Angles>("angles", 50);
+  ros::Publisher angles_pub = n.advertise<arduino::Angles>("angles", 50); 
 
   ros::Rate loop_rate(10);
 
